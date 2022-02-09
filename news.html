@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스 Api</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box }
+
+        #content { max-width:1000px; margin: 20px auto;}
+        
+        #content .tabTit a {background: #555; padding: 10px 20px; color: #fff;
+            border-radius: 50px;}
+
+        #content ul { overflow:hidden }
+        #content ul li { float:left; width:25%; padding:10px }
+        #content ul li:nth-child(4n+1) { clear:both }
+        #content ul li img { width:100% }
+
+        #content .loading {margin: 100px;}
+    </style>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    
+    <div id="content">
+        <div class="tabTit">
+            <a href="all">전체</a>
+            <a href="business">경제</a>
+            <a href="entertainment">엔터테인먼트</a>
+            <a href="health">건강</a>
+            <a href="science">과학</a>
+            <a href="sports">스포츠</a>
+            <a href="technology">기술</a>
+        </div>
+
+        <!-- <ul>
+            <li>
+                <h2>기사제목</h2>
+                <img src="기사사진" alt="">
+                <p>기사내용</p>
+                <div>기자이름</div>
+            </li>
+        </ul> -->
+    </div>
+
+    <script src="./js/news.js"></script>
+
+</body>
+</html>
