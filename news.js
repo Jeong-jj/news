@@ -14,7 +14,7 @@ function call(cate) {
         complete: function() {
             $('#content .loading').remove()
         },
-        timeout: 2000, // 요청한 데이터를 불러오는데 기다릴 시간(밀리세컨드)
+        // timeout: 2000, // 요청한 데이터를 불러오는데 기다릴 시간(밀리세컨드)
         success:function(getdata){
             console.log(getdata)
             usedata(getdata)
